@@ -5,3 +5,4 @@ class Sell(StockBase):
     def format_data(self):
         super().format_data()
         self.output["sell_id"] = self.order_id
+        return self.output
